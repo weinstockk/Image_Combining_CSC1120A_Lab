@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weinstockk.Controller">
+    <ScrollPane hbarPolicy="ALWAYS" prefHeight="172.0" prefWidth="429.0" vbarPolicy="NEVER">
+        <HBox fx:id="scroll" prefHeight="154.0" prefWidth="428.0" />
+    </ScrollPane>
+    <HBox prefHeight="21.0" prefWidth="600.0">
+        <Button fx:id="addImage" mnemonicParsing="false" onAction="#chooseFile" text="Add Image">
+            <HBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#calculateMean" text="Mean">
+            <HBox.margin>
+                <Insets bottom="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#calculateMedian" text="Median">
+            <HBox.margin>
+                <Insets bottom="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+        </Button>
+      <Button mnemonicParsing="false" onAction="#calculateMin" text="Min">
+         <HBox.margin>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#calculateMax" text="Max">
+         <HBox.margin>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#calculateRandom" text="Random">
+         <HBox.margin>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </Button>
+        <Button mnemonicParsing="false" onAction="#saveFile" text="Save As">
+            <HBox.margin>
+                <Insets bottom="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+    <ImageView fx:id="view" fitHeight="311.0" fitWidth="422.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="notes" text="Add Images">
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </VBox.margin>
+    </Label>
+</VBox>
